@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Short Dress",
+    "price": 1000,
+    "description": 350,
+    "posted": "2016-06-01",
+    "contact": {
+      "name": "liberent",
+      "phone": "123-456-789"
+    },
+    "categories":[
+    "Western"
+    ],
+    "image": "http://www.liberent.com/img/prodimg/P323/P323J1R300.jpg?w=400",
+    "views": 213
+  },
+  {
+    "id": "2",
+    "title": "Suit",
+    "price": 2000,
+    "rent": 450,
+    "posted": "2016-06-02",
+    "contact": {
+      "name": "liberent",
+      "phone": "123-456-789"
+    },
+    "categories":[
+    "Indian"
+    ],
+    "image": "http://www.liberent.com/img/prodimg/P321/P321J1R300.jpg?w=400",
+    "views": 212
+  },
+  {
+    "id": "3",
+    "title": "Suit",
+    "price": 2500,
+    "description": 550,
+    "posted": "2016-06-03",
+    "contact": {
+      "name": "liberent",
+      "phone": "123-456-798"
+    },
+    "categories":[
+    "Indian"
+    ],
+    "image": "http://www.liberent.com/img/prodimg/P321/P321J1R300.jpg?w=400",
+    "views": 214
+  }
+]
