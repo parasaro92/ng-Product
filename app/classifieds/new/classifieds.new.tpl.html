@@ -1,6 +1,6 @@
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-open="vm.sidenavOpen">
   <md-toolbar>
-  <h1 class="md-toolbar-tools">Add a Dress</h1>
+  <h1 class="md-toolbar-tools">Add a Product</h1>
   </md-toolbar>
   <md-content layout-padding>
     
@@ -20,6 +20,15 @@
       <md-input-container>
       <label for="image">Image</label>
       <input type="text" id="image" ng-model="item.image" md-autofocus>
+      </md-input-container>
+      <md-input-container class="md-block">
+          <label for="genre" class="col-lg-4 control-label">Category</label>
+          <md-select ng-model="item.category">
+            <md-option
+              class="form-control" 
+              ng-repeat="category in vm.categories" value="{{category}}">{{category}}
+            </md-option>
+          </md-select>
       </md-input-container>
       <md-button ng-if="!editing" ng-click="vm.saveItem(item)" class="md-primary">
       Save

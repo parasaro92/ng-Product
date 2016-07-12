@@ -18,6 +18,8 @@ myApp.controller('newClassifiedsCtrl', function($scope, $state, $mdSidenav, $tim
     }
   });
 
+  vm.categories = ["Western", "Indian", "Ethnic"];
+
   function closeSidebar() {
     vm.sidenavOpen = false;
   }

@@ -14,9 +14,12 @@ myApp.controller('myController', function($scope, $state, $http, classifiedsFact
   // vm.saveEdit = saveEdit;
 
   vm.items = classifiedsFactory.ref; 
-  vm.items.$loaded().then(function(items){
-    vm.categories = getCategories(items);
-  });
+  // vm.items.$loaded().then(function(items){
+  //   // console.log(vm.items);
+  //   vm.categories = getCategories(items);
+  // });
+
+  vm.categories = ["Western", "Indian", "Ethnic"];
 
   $scope.$on('newItem', function(event, item){
     vm.items.$add(item);
@@ -28,7 +31,7 @@ myApp.controller('myController', function($scope, $state, $http, classifiedsFact
   });
 
   var contact = {
-    name: "Flash",
+    name: "Liberent",
     phone: "555-555-444"
   }
 
@@ -46,7 +49,7 @@ myApp.controller('myController', function($scope, $state, $http, classifiedsFact
       vm.items.push(item);
       vm.item = {};
       closeSidebar();   
-      showToast("Item saved!");
+      showToast("Product saved!");
     }
   }
 
@@ -71,7 +74,7 @@ myApp.controller('myController', function($scope, $state, $http, classifiedsFact
       .targetEvent(event);
     $mdDialog.show(confirm).then(function(){
       vm.items.$remove(item);
-      showToast('Item deleted');     
+      showToast('Product deleted');     
     }, function(){
 
     });   
